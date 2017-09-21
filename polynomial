@@ -8,10 +8,10 @@ using namespace std;
 
 int main() {
 	int n,i;
-	float x, value;
-	value = 0;
-	scanf("%f %n", &x, &n);
-	for (i = 0; i <= n; i++) {
+	float x,value;
+	cin >> x >> n;//why cannot use printf("%f %d", &x,&n);?
+	value = 0.0;
+	for (i = 0; i < n + 1 ; i++) {
 		value += pow(x, i);
 	}
 	printf("%.2f", value);
