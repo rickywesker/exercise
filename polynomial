@@ -1,0 +1,19 @@
+/*Program: Calculate the value of a polynomial
+  Oct 21st, 2017
+  By Ricky Chan*/
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	int n,i;
+	float x, value;
+	value = 0;
+	scanf("%f %n", &x, &n);
+	for (i = 0; i <= n; i++) {
+		value += pow(x, i);
+	}
+	printf("%.2f", value);
+	return 0;
+}
