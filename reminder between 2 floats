@@ -1,0 +1,13 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	double p, q,r;
+	int k;
+	cin >> p >> q;
+	k = p / q;
+	r = p - k * q;
+	cout << r;
+	return 0;
+}
