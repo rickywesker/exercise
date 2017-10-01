@@ -1,0 +1,33 @@
+/*NAME:Logic1 
+BY RickyChan
+2017-9-29*/
+
+#include<iostream>
+using namespace std;
+int main() {
+	bool isOne = 1;
+	bool isFive = 1;
+	bool isTen = 1;
+	int one = 0;
+	int five = 0;
+	int ten = 0;
+	int k,i[100],j;
+	cin >> k;
+	for (j = 0; j < k; j++) {
+		cin >> i[j];
+	}
+	for (j = 0; j < k; j++) {
+		if (i[j] == 1) {
+			one += isOne;
+		}
+		else if (i[j] == 5) {
+			five += isFive;
+		}
+		else if (i[j] == 10) {
+			ten += isTen;
+		}
+		
+	}
+	cout << one << endl << five << endl << ten;
+		return 0;
+}
