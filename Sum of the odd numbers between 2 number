@@ -1,0 +1,22 @@
+/*NAME:Sum of the odd numbers between 2 number
+BY RickyChan
+2017-10-02*/
+
+#include<iostream>
+using namespace std;
+int main() {
+	int num1, num2,i ,j;
+	int s[300];
+	int sum = 0;
+	cin >> num1 >> num2;
+	for (i = 0,j = 1; i < 300; i++,j++) {
+		s[i] = j;
+	}
+	for (i = num1 - 1; i < num2; i++) {
+		if (s[i] % 2 != 0) {
+			sum += s[i];
+		}
+	}
+	cout << sum;
+		return 0;
+}
