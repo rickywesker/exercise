@@ -1,0 +1,19 @@
+/*NAME:show the digit
+BY RickyChan
+2017-10-02*/
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main() {
+	char integer[100];
+	cin >> integer;
+	int ilen = strlen(integer);
+	int i;
+	for (i = 0; i < ilen; i++) {
+		cout << integer[i] << endl;
+	}
+	
+		return 0;
+}
