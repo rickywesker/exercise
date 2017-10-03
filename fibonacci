@@ -1,0 +1,25 @@
+/*Name:Fibonacci
+  Date:2017-10-03
+  By Ricky Chan*/
+#include<iostream>
+using namespace std;
+
+int main() {
+	int fib[50];
+	int index[50];
+	int i,n;
+	fib[0] = 1;
+	fib[1] = 1;
+	for (i = 2; i < 50; i++) {
+		fib[i] = fib[i - 1] + fib[i - 2];//Define fibonacci sequence.
+	}
+	cin >> n;
+	for (i = 0; i < n; i++) {
+		cin >> index[i];//store the index into an array.
+	}
+	for (i = 0; i < n; i++) {
+		cout << fib[index[i] - 1]<< endl;	//output the sequence.
+	}
+	
+	return 0;
+}
