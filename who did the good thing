@@ -1,0 +1,23 @@
+/*Name:Who did the good thing?
+  Date:2017-10-04
+  By Ricky Chan*/
+#include<iostream>
+using namespace std;
+int main() {
+	char thisman = 'A';
+	bool none = true;
+	while (thisman <= 'D') {
+		if ((thisman != 'A') + (thisman == 'C') + (thisman == 'D') + (thisman != 'D') != 3) {
+			thisman++;
+			continue;
+		}
+		cout << thisman << " did it" << endl;
+		none = false;
+		break;
+		
+	}
+	if (none) {
+		cout << "no one did" << endl;
+	}
+	return 0;
+}
