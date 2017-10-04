@@ -1,0 +1,34 @@
+/*NAME:Judging Cars
+  Date:2017-10-04
+  By Ricky Chan*/
+#include<iostream>
+using namespace std;
+int main() {
+	char bestCar = '1';
+	bool noBest = true;
+	while (bestCar <= '4') {
+		if ((bestCar == '2') + (bestCar == '4') + (bestCar != '3') + (bestCar != '4') != 1) {
+			bestCar++;
+			continue;
+		}
+		cout << bestCar << endl;
+		if(bestCar == '2'){
+			cout << "A" << endl;
+		}
+		else if (bestCar == '4') {
+			cout << "B" << endl;
+		}
+		else if (bestCar != '3') {
+			cout << "C" << endl;
+		}
+		else {
+			cout << "D" << endl;
+		}
+		noBest = false;
+		break;
+	}
+	if (noBest) {
+		cout << "no best";
+	}
+	return 0;
+}
