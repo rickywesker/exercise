@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a, b, cnum, rnum,i;
+	cin >> a >> b;
+	for (i = 0; i <= a; i++) {
+		cnum = i;
+		rnum = a - i;
+		if (2 * cnum + 4 * rnum == b) {
+			cout << cnum << " " <<rnum << endl;
+			break;
+		}
+	}
+
+	return 0;
+}
